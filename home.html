@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleHome.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+    <title>MovieDB by Eric</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <nav class="nav">
+        <div class="container">
+            <!-- Home -->
+            <h1 class="logo"><a href="home.html">MovieDB</a></h1>
+            <!-- Menu -->
+            <ul>    
+                <li><a href="list.html?page=nowshowing">Now Playing</a></li>
+                <li><a href="list.html?page=trending">Trending</a></li>
+                <li><a href="list.html?page=upcoming">Coming Soon</a></li>
+                <li>
+                <!-- Search -->
+                <form id="form">  
+                    <input type="text" id="search" class="search" placeholder="Search" autocomplete="off">
+                </form>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- SlideShow -->
+    <div class="poster">
+        <div class="image-wrapper">
+        </div> 
+      </div>
+
+    <!-- Now Playing Poster -->
+    <div class="list">
+        <div class="list-content">
+            <h3>
+                <a href="list.html?page=nowshowing">Now Playing</a>
+            </h3>
+            <div class="outer-container">
+                <div class="small-img-container" id="now-showing">
+
+                </div>
+                <button class="arrow left-arrow" id="left-now-showing">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <button class="arrow right-arrow active" id="right-now-showing">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trending Poster-->
+    <div class="list">
+        <div class="list-content">
+            <h3>
+                <a href="list.html?page=trending">Trending</a>
+            </h3>
+            <div class="outer-container">
+                <div class="small-img-container" id="trending">
+
+                </div>
+                <button class="arrow left-arrow" id="left-trending">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <button class="arrow right-arrow active" id="right-trending">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Upcoming Poster-->
+    <div class="list">
+        <div class="list-content">
+            <h3>
+                <a href="list.html?page=upcoming">Coming Soon</a>
+            </h3>
+            <div class="outer-container">
+                <div class="small-img-container" id="upcoming">
+
+                </div>
+                <button class="arrow left-arrow" id="left-upcoming">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <button class="arrow right-arrow active" id="right-upcoming">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+      <script src="logic.js"></script>
+</body>
+</html>

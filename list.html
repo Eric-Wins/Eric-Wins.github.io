@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleList.css" />
+    <title></title>
+</head>
+<body>
+
+    <!-- Header -->
+    <nav class="nav">
+        <div class="container">
+            <!-- Home -->
+            <h1 class="logo"><a href="home.html">MovieDB</a></h1>
+            <!-- Menu -->
+            <ul>    
+                <li><a href="list.html?page=nowshowing">Now Playing</a></li>
+                <li><a href="list.html?page=trending">Trending</a></li>
+                <li><a href="list.html?page=upcoming">Coming Soon</a></li>
+                <li>
+                <!-- Search -->
+                <form id="form">  
+                    <input type="text" id="search" class="search" placeholder="Search" autocomplete="off">
+                </form>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="list-container">
+        <div class="title">
+            <h3 id="title"></h3>
+        </div>
+
+        <div class="content-container">
+        </div>
+    </div>
+
+    <script src="scriptList.js"></script>
+</body>
+</html>

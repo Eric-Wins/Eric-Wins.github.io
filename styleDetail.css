@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Noto+Serif:wght@700&family=Open+Sans:wght@300&family=Outfit:wght@100&family=Poppins:wght@300&family=Ruda&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #000030;
+}
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+    body::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* NavBar */
+.nav {
+    font-family: 'Poppins';
+    position: fixed;
+    background-color: #000030;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    padding-right: 30px;
+}
+
+.nav a {
+    user-select: none;
+  color: lightgray;
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav a.current,
+.nav a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+.search {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px lightgray solid;
+    padding: 15px 0;
+    font-size: 18px;
+    color: lightgray;
+  }
+
+.search:focus {
+    outline: none;
+    border-bottom: 2px #003494 solid;
+}
+
+/* content */
+.content-container {
+    background-color: rgba(0, 0, 0, 0.2);
+    background-image: '';
+    background-size: cover;
+    background-position: 350px 0px; 
+    background-repeat: no-repeat;
+    top: 80px;
+    height: 550px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-container::after {
+    content: '';
+    background-image: linear-gradient(to right, black , rgba(0, 0, 0, 0.8));
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: absolute;
+}
+
+.grad {
+    background-image: linear-gradient(to right, black , rgba(0, 0, 0, 0.0));
+    left: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 0;
+    position: absolute;
+}
+
+.all-container {
+    height: max-content;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+/* Poster area */
+.poster {
+    height: 490px;
+    width: 300px;
+}
+
+.poster-img {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+}
+
+.homepage-container {
+    position: relative;
+    top: -5px;
+    user-select: none;
+    background-color: #063970;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins';
+}
+
+/* facts area */
+.detail-container {
+    padding-left: 40px;
+    width: calc(100% - 300px);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.title-container {
+    width: 100%;
+}
+
+.title-container .title {
+    font-family: 'Noto Serif';
+    font-size: 35px;
+}
+
+.title-year {
+    font-family: 'Open Sans';
+    font-size: 30px;
+    opacity: 0.8;
+}
+
+.small-title {
+    display: flex;
+    letter-spacing: 1px;
+    font-family: 'Outfit';
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.small-title > * {
+    margin-right:30px;
+}
+
+.small-title ul {
+    display: flex;
+}
+
+.small-title li {
+    margin-right:30px;
+}
+
+.summary {
+    height: max-content;
+    margin-bottom: 30px;
+}
+
+.tagline {
+    opacity: 0.7;
+    font-family: 'Open Sans';
+    font-style: italic;
+}
+
+.overview-text {
+    margin: 10px 0;
+    position: relative;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.bonus {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.each {
+    width: calc(100% / 3);
+    margin-bottom: 20px;
+}
+
+.each-title {
+    font-weight: bold;
+}
+
+.each-detail {
+    font-size: 14px;
+}
+
+
